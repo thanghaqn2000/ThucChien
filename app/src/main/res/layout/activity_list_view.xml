@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListView"
+    android:weightSum="6"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:layout_weight="1"
+        android:background="@drawable/gradient2">
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="72dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="280dp"
+            android:layout_marginRight="280dp"
+            app:srcCompat="@drawable/sia" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginRight="200dp"
+            android:tint="#B1DDD7"
+            app:srcCompat="@drawable/ic_baseline_skip_previous_24"
+            tools:ignore="UseAppTint,VectorDrawableCompat" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="159dp"
+            android:layout_marginRight="159dp"
+            android:tint="#B1DDD7"
+            app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+            tools:ignore="UseAppTint,VectorDrawableCompat" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="116dp"
+            android:layout_marginRight="116dp"
+            android:tint="#B1DDD7"
+            app:srcCompat="@drawable/ic_baseline_stop_24"
+            tools:ignore="UseAppTint,VectorDrawableCompat" />
+
+        <TextView
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="157dp"
+            android:layout_marginLeft="157dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginRight="29dp"
+            android:text="Song: Unstoppable!"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-1dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="4dp"
+            android:background="#fff" />
+
+        <TextView
+            android:layout_width="39dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="294dp"
+            android:layout_marginRight="294dp"
+            android:layout_marginBottom="16dp"
+            android:text="Sia"
+            android:textColor="#DFD3D3" />
+
+        <TextView
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="113dp"
+            android:layout_marginRight="113dp"
+            android:layout_marginBottom="57dp"
+            android:text="Rating: 5 Star"
+            android:textColor="#DCA0A0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:layout_weight="1"
+        android:background="@drawable/gradient2">
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="72dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="280dp"
+            android:layout_marginRight="280dp"
+            app:srcCompat="@drawable/mtp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginRight="200dp"
+            android:tint="#B1DDD7"
+            app:srcCompat="@drawable/ic_baseline_skip_previous_24"
+            tools:ignore="UseAppTint,VectorDrawableCompat" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="159dp"
+            android:layout_marginRight="159dp"
+            android:tint="#B1DDD7"
+            app:srcCompat="@drawable/ic_baseline_pause_presentation_24"
+            tools:ignore="UseAppTint,VectorDrawableCompat" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="116dp"
+            android:layout_marginRight="116dp"
+            android:tint="#B1DDD7"
+            app:srcCompat="@drawable/ic_baseline_stop_24"
+            tools:ignore="UseAppTint,VectorDrawableCompat" />
+        <TextView
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="157dp"
+            android:layout_marginLeft="157dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="91dp"
+            android:layout_marginRight="91dp"
+            android:text="Song: Run Now !"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-1dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="4dp"
+            android:background="#fff" />
+        <TextView
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="257dp"
+            android:layout_marginRight="257dp"
+            android:layout_marginBottom="15dp"
+            android:text="Sơn Tùng - MTP"
+            android:textColor="#DFD3D3" />
+        <TextView
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="113dp"
+            android:layout_marginRight="113dp"
+            android:layout_marginBottom="57dp"
+            android:text="Rating: 5 Star"
+            android:textColor="#DCA0A0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:layout_weight="1"
+        android:background="@drawable/gradient2">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="280dp"
+            android:layout_marginRight="280dp"
+            app:srcCompat="@drawable/bts" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginRight="200dp"
+            android:tint="#B1DDD7"
+            app:srcCompat="@drawable/ic_baseline_skip_previous_24"
+            tools:ignore="UseAppTint,VectorDrawableCompat" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="159dp"
+            android:layout_marginRight="159dp"
+            android:tint="#B1DDD7"
+            app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+            tools:ignore="UseAppTint,VectorDrawableCompat" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="116dp"
+            android:layout_marginRight="116dp"
+            android:tint="#B1DDD7"
+            app:srcCompat="@drawable/ic_baseline_stop_24"
+            tools:ignore="UseAppTint,VectorDrawableCompat" />
+        <TextView
+            android:layout_width="193dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="157dp"
+            android:layout_marginLeft="157dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="61dp"
+            android:layout_marginRight="61dp"
+            android:text="Song: Spring Day !"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-1dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="4dp"
+            android:background="#fff" />
+
+        <TextView
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="283dp"
+            android:layout_marginRight="283dp"
+            android:layout_marginBottom="18dp"
+            android:text="BTS"
+            android:textColor="#DFD3D3" />
+
+        <TextView
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="113dp"
+            android:layout_marginRight="113dp"
+            android:layout_marginBottom="57dp"
+            android:text="Rating: 5 Star"
+            android:textColor="#DCA0A0" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:layout_weight="1"
+        android:background="@drawable/gradient2">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="280dp"
+            android:layout_marginRight="280dp"
+            app:srcCompat="@drawable/bray" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginRight="200dp"
+            android:tint="#B1DDD7"
+            app:srcCompat="@drawable/ic_baseline_skip_previous_24"
+            tools:ignore="UseAppTint,VectorDrawableCompat" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="159dp"
+            android:layout_marginRight="159dp"
+            android:tint="#B1DDD7"
+            app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+            tools:ignore="UseAppTint,VectorDrawableCompat" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="116dp"
+            android:layout_marginRight="116dp"
+            android:tint="#B1DDD7"
+            app:srcCompat="@drawable/ic_baseline_stop_24"
+            tools:ignore="UseAppTint,VectorDrawableCompat" />
+
+        <TextView
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="157dp"
+            android:layout_marginLeft="157dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginRight="43dp"
+            android:text="Song: Do for love !"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-1dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="4dp"
+            android:background="#fff" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="257dp"
+            android:layout_marginRight="257dp"
+            android:layout_marginBottom="15dp"
+            android:text="B-Ray"
+            android:textColor="#DFD3D3" />
+        <TextView
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="113dp"
+            android:layout_marginRight="113dp"
+            android:layout_marginBottom="57dp"
+            android:text="Rating: 5 Star"
+            android:textColor="#DCA0A0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:layout_weight="1"
+        android:background="@drawable/gradient2">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="-2dp"
+            android:layout_marginEnd="280dp"
+            android:layout_marginRight="280dp"
+            app:srcCompat="@drawable/biber" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginRight="200dp"
+            android:tint="#B1DDD7"
+            app:srcCompat="@drawable/ic_baseline_skip_previous_24"
+            tools:ignore="UseAppTint,VectorDrawableCompat" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="159dp"
+            android:layout_marginRight="159dp"
+            android:tint="#B1DDD7"
+            app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+            tools:ignore="UseAppTint,VectorDrawableCompat" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="116dp"
+            android:layout_marginRight="116dp"
+            android:tint="#B1DDD7"
+            app:srcCompat="@drawable/ic_baseline_stop_24"
+            tools:ignore="UseAppTint,VectorDrawableCompat" />
+
+        <TextView
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="166dp"
+            android:layout_marginLeft="166dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="82dp"
+            android:layout_marginRight="82dp"
+            android:text="Song: Yummy !"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-1dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="4dp"
+            android:background="#fff" />
+
+        <TextView
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="247dp"
+            android:layout_marginRight="247dp"
+            android:layout_marginBottom="16dp"
+            android:text="Justin Bieber"
+            android:textColor="#DFD3D3" />
+
+        <TextView
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="113dp"
+            android:layout_marginRight="113dp"
+            android:layout_marginBottom="57dp"
+            android:text="Rating: 5 Star"
+            android:textColor="#DCA0A0" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:layout_weight="1"
+        android:background="@drawable/gradient2">
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="72dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="280dp"
+            android:layout_marginRight="280dp"
+            app:srcCompat="@drawable/bigbang" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginRight="200dp"
+            android:tint="#B1DDD7"
+            app:srcCompat="@drawable/ic_baseline_skip_previous_24"
+            tools:ignore="UseAppTint,VectorDrawableCompat" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="159dp"
+            android:layout_marginRight="159dp"
+            android:tint="#B1DDD7"
+            app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+            tools:ignore="UseAppTint,VectorDrawableCompat" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="116dp"
+            android:layout_marginRight="116dp"
+            android:tint="#B1DDD7"
+            app:srcCompat="@drawable/ic_baseline_stop_24"
+            tools:ignore="UseAppTint,VectorDrawableCompat" />
+        <TextView
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="166dp"
+            android:layout_marginLeft="166dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="82dp"
+            android:layout_marginRight="82dp"
+            android:text="Song: If you !"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-1dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="4dp"
+            android:background="#fff" />
+        <TextView
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="259dp"
+            android:layout_marginRight="259dp"
+            android:layout_marginBottom="19dp"
+            android:gravity="center"
+            android:text="Big Bang"
+            android:textColor="#DFD3D3" />
+        <TextView
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="113dp"
+            android:layout_marginRight="113dp"
+            android:layout_marginBottom="57dp"
+            android:text="Rating: 5 Star"
+            android:textColor="#DCA0A0" />
+    </RelativeLayout>
+</LinearLayout>
